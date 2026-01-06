@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-area">
+            <img src="src/images/logo1.png" alt="Sweet Donuts" class="logo">
+            
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+                <li><a href="#flavors">Sabores da semana</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+       <button class="btn-contato" >CONTATO</button>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <img src="src/images/home2.png" alt="imagem de um donut de morango" class="home-image">
+            <h1 class="home-title">O doce perfeito para <span>qualquer momento</span></h1>
+            <p class="home-description">Descubra sabores únicos, donuts fresquinhos e a doçura ideal para transformar seu dia</p>
+            <div class="home-actions">
+            <a href="#flavors" class="btn btn-default">Cardápio</a>
+            <a href="#contato" class="btn btn-outlined">Contatar</a>
+           </div>
+
+        </section>
+
+        <section id="about">
+            <div class="about-text">
+                <h2>Sobre Nós</h2>
+                <p> A <span>SweetDonuts</span>  é uma pequena loja familiar dedicada a criar donuts artesanais sempre fresquinhos. Nossos sabores mudam semanalmente e são produzidos em quantidades limitadas para garantir qualidade e sabor em cada mordida.</p>
+            </div>
+            <div class="about-image">
+                <img src="src/images/about-image.png" alt="foto de três donuts de sabores diferentes">
+            </div>
+            <div class="about-text">
+                <h2>Encomendas</h2>
+                <p>Aceitamos encomendas para o dia pelo <span>WhatsApp</span> e pedidos para eventos com nossos sabores clássicos. Somos novos no mercado, mas já conquistamos uma clientela fiel que acredita no nosso jeito de trabalhar: próximo, cuidadoso e cheio de carinho.</p>
+            </div>
+        </section>
+
+        <section id="flavors">
+            <h2>Sabores da semana</h2>
+            <div class="flavors-cards">
+                <div class="flavors-card">
+                    <img src="src/images/donu-choco.jpg" alt="Donuts de chocolate">
+                    <h3>Donuts Chocolate Belga</h3>
+                    <p class="flavors-description">Donut macio com chocolate belga puro e irresistível.</p>
+                </div>
+                <div class="flavors-card">
+                    <img src="src/images/donu-morango.jpg" alt="Donuts de morango">
+                    <h3>Donuts Morango</h3>
+                    <p class="flavors-description">Leve, delicado e coberto com um glaze de morango perfeito.</p>
+                </div>
+                <div class="flavors-card">
+                    <img src="src/images/donu-pistache.jpg" alt="Donuts de pistache">
+                    <h3>Donuts de Pistache</h3>
+                    <p class="flavors-description">Massa leve com cobertura cremosa de pistache e sabor único.</p>
+                </div>
+                <div class="flavors-card">
+                    <img src="src/images/donu-caramelo.jpg" alt="Donuts de caramelo">
+                    <h3>Donuts Caramelo</h3>
+                    <p class="flavors-description">Doce na medida certa, com uma camada lisa de caramelo suave.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="form-contato">
+                <h2>Faça sua encomenda</h2>
+
+                <form action="" class="form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">WhatsApp</label>
+                        <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Sua encomenda</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Descreva sua encomenda..." required></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Enviar</button>
+                        <button type="reset" class="btn-reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer><p>Copyright 2025
+        <i class="fa-regular fa-copyright"></i>
+        Feito por Débora Gonçalves
+    </p></footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('#nav-menu');
+
+        hamburger.addEventListener('click', () => {
+         hamburger.classList.toggle('active');
+             navMenu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
